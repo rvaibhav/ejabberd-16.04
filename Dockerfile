@@ -11,4 +11,6 @@ COPY ejabberd.yml /opt/ejabberd-16.04/conf/ejabberd.yml
 COPY run.sh /run.sh
 RUN chmod 755 /run.sh
 
+EXPOSE 5280
+
 ENTRYPOINT ["/run.sh"]

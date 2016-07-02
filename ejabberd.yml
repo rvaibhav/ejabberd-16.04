@@ -36,7 +36,7 @@
 ## 4: Info
 ## 5: Debug
 ##
-loglevel: 4
+loglevel: 5
 
 ##
 ## rotation: Describe how to rotate logs. Either size and/or date can trigger
@@ -94,8 +94,7 @@ log_rate_limit: 100
 ##   - "example.org"
 ##
 hosts:
-  - "fff5562e8198"
-  - "irc.hereim.co"
+  - "irc.mydomain.tld"
 
 ##
 ## route_subdomains: Delegate subdomains to other XMPP servers.
@@ -409,8 +408,7 @@ acl:
   ##
   admin:
     user:
-      - "admin": "fff5562e8198"
-      - "admin": "irc.hereim.co"
+      - "admin": "irc.mydomain.tld"
 
   ##
   ## Blocked users
@@ -521,7 +519,7 @@ access:
 
 ## By default the frequency of account registrations from the same IP
 ## is limited to 1 account every 10 minutes. To disable, specify: infinity
-## registration_timeout: 600
+registration_timeout: infinity
   
 ##
 ## Define specific Access Rules in a virtual host.
